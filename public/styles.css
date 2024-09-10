@@ -1,0 +1,68 @@
+body {
+    background-color: #f0f8ff; /* Light background color for better contrast */
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    color: #007bff; /* Primary color for the header */
+    font-weight: bold;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007bff; /* Border color matching the button */
+    background-color: #fff; /* Ensure the input has a light background */
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #0056b3; /* Darker blue on focus */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Slightly darker on hover */
+    border-color: #0056b3;
+}
+
+#messages {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+#messages li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    list-style-type: none;
+    transition: background-color 0.3s;
+}
+
+#messages li:nth-child(odd) {
+    background-color: #e9f7ff;
+}
+
+#messages li:hover {
+    background-color: #d1ecff; /* Highlight messages on hover */
+}
